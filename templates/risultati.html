@@ -1,0 +1,158 @@
+Hai cercato "{{query}}" tramite il filtro {{filtro}}<br>
+Tweet trovati:<br>
+<script>
+    var results = {{ results| tojson | safe}}
+    results = JSON.parse(results)
+
+    //Creo oggetto tweet_string 
+    var el = document.getElementById("risultati")
+    var markersList = []
+    var coordList = [] // lista utile al collegamento dei marker
+
+    if (results["meta"]["result_count"] > 0) {
+        for (var tweet of results["data"]) {
+            // creazione contenitore card tweet
+            newDiv = document.createElement("div")
+            newDiv.setAttribute("class", "card tweet-card m-3")
+
+            // creazione e riempimento card body
+            cardBody = document.createElement("div")
+            cardBody.setAttribute("class", "card-body")
+
+            // creazione e riempimento propic
+            propic = document.createElement("img")
+            propic.src = tweet["profile_image_url"]
+            propic.alt = "profile picture"
+            propic.setAttribute("class", "propic float-start")
+
+            // creazione e riempimento nome
+            nome = document.createElement("h6")
+            nome.setAttribute("class", "name card-title fw-bold mb-0")
+            nome.innerHTML = tweet["name"]
+            cardBody.append(propic)
+            cardBody.appendChild(nome)
+
+            // creazione e riempimento username
+            username = document.createElement("h7")
+            username.setAttribute("class", "username card-subtitle fw-light")
+            username.innerHTML = "@" + tweet["username"]
+            cardBody.appendChild(username)
+
+            // creazione e riempimento tweet text
+            text = document.createElement("p")
+            text.setAttribute("class", "tweet-text card-text pt-2")
+            text.innerHTML = tweet["text"]
+            cardBody.appendChild(text)
+
+            // creazione e riempimento media
+            if (tweet.hasOwnProperty("attachments")) {
+                media = document.createElement("img")
+                media.src = tweet["attachments"]["media"]["url"]
+                media.alt = "media"
+                cardBody.appendChild(media)
+                media.setAttribute("class", "media card-img mb-3")
+            }
+
+            // conversione ISO date -> date time format
+            const datetime = new Date(tweet["created_at"])
+
+            function parseDate(datetime) {
+                day = datetime.getDate()
+                month = datetime.getMonth() + 1
+                year = datetime.getFullYear()
+                return day + "/" + month + "/" + year
+            }
+
+            // creazione e riempimento date
+            date = document.createElement("span")
+            date.className = "created_at fw-light"
+            date.innerHTML = "twittato il " + parseDate(datetime) + " alle " + datetime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            cardBody.appendChild(date)
+
+            bollino = document.createElement("span")
+            bollino.className = "bollino"
+            bollino.innerHTML = "●"
+
+            switch (tweet["sentiment"]) {
+                case 'positive':
+                    bollino.style.color = "#228b22";
+                    newDiv.classList.add("positive");
+                    break;
+                case 'negative':
+                    bollino.style.color = "#ee4b2b";
+                    newDiv.classList.add("negative");
+                    break;
+                case 'neutral':
+                    bollino.style.color = "#0047ab";
+                    newDiv.classList.add("neutral");
+                    break;
+                default:
+                    bollino.style.color = "#dddddd";
+            }
+
+            cardBody.appendChild(bollino)
+
+            // aggiunta al DOM
+            newDiv.appendChild(cardBody)
+            el.appendChild(newDiv)
+            $(".bollino").hide()
+
+            if ("geo" in tweet) {
+                const coord = [tweet["geo"]["lat"], tweet["geo"]["long"]]
+
+                geoRadio = document.createElement("input")
+                geoRadio.setAttribute("type", "radio")
+                geoRadio.setAttribute("id", tweet["id"])
+                geoRadio.setAttribute("name", "geo")
+                geoRadio.className = "btn-check"
+
+                geoLabel = document.createElement("label")
+                geoLabel.innerHTML = '<i class="fa-solid fa-location-dot"></i>'
+                geoLabel.setAttribute("for", tweet["id"])
+                geoLabel.className = "btn btn-outline-primary border-0 geolabel"
+
+                newDiv.appendChild(geoRadio)
+                newDiv.appendChild(geoLabel)
+
+                const id = tweet["id"]
+                const marker = L.marker([tweet["geo"]["lat"], tweet["geo"]["long"]]).on("click", function clickMarker(event) {
+                    clickGeo();
+                    var selected = document.getElementById(id);
+                    selected.checked = true;
+                }).addTo(map)
+                markersList.push(marker)
+                coordList.push([tweet["geo"]["lat"], tweet["geo"]["long"]]) // per tracciare linea che collega i marker
+
+                // onclick geolabel
+                function clickGeo() {
+                    // mostra mappa
+                    if ($("#location-tab").is(":hidden")) {
+                        $("#location-tab").slideToggle()
+                    }
+                    map.flyTo(marker.getLatLng(), 12) // quando funziona tutto settare a 12
+                    for (var m of markersList) {
+                        m.setIcon(blueIcon)
+                    }
+                    marker.setIcon(redIcon)
+
+                    document.getElementById("latitudine").value = marker.getLatLng().lat
+                    document.getElementById("longitudine").value = marker.getLatLng().lng
+
+                    // sposta visualizzazione sulla mappa se non e' visualizzata al momento del click
+                    if (!isInViewport(document.getElementById("location-tab"))) {
+                        $(window).scrollTop($('#location-tab').position().top);
+                    }
+                    $("#area").hide()
+                }
+                geoLabel.onclick = clickGeo
+            }
+        }
+        // UNCOMMENT QUANDO È PRONTO NUOVO FRONTEND
+        function connectMarkers() {
+            var pathLine = L.polyline(coordList).addTo(map) // collego i marker in ordine cronologico
+        }
+    }
+    else {
+        el.appendChild(document.createTextNode("Nessun risultato trovato"))
+    }
+</script>

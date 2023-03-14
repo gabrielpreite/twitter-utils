@@ -1,0 +1,1502 @@
+{
+    "puntate": [
+      {
+        "data_puntata": "2022-12-31",
+        "parole": [
+          "NO",
+          "BIANCO",
+          "PREZZI",
+          "FELICIT\u00c0",
+          "ALLEGRI"
+        ],
+        "podio": {
+          "primo": [
+            {
+              "username": "@ManySkills1701",
+              "time": "2022-12-31 19:47:00"
+            }
+          ],
+          "secondo": [
+            {
+              "username": "@RE_dicuori",
+              "time": "2022-12-31 19:47:27"
+            }
+          ],
+          "terzo": [
+            {
+              "username": "@ZarIvan70",
+              "time": "2022-12-31 19:47:29"
+            }
+          ]
+        },
+        "classifica": [
+          {
+            "username": "@ManySkills1701",
+            "time": "2022-12-31 19:47:00"
+          },
+          {
+            "username": "@RE_dicuori",
+            "time": "2022-12-31 19:47:27"
+          },
+          {
+            "username": "@ZarIvan70",
+            "time": "2022-12-31 19:47:29"
+          },
+          {
+            "username": "@dielle013",
+            "time": "2022-12-31 19:47:31"
+          },
+          {
+            "username": "@giulysua",
+            "time": "2022-12-31 19:47:33"
+          },
+          {
+            "username": "@climottantasei",
+            "time": "2022-12-31 19:47:34"
+          },
+          {
+            "username": "@Mario_Molinari",
+            "time": "2022-12-31 19:47:42"
+          },
+          {
+            "username": "@CarlaGigia",
+            "time": "2022-12-31 19:47:45"
+          },
+          {
+            "username": "@fedram67",
+            "time": "2022-12-31 19:47:46"
+          },
+          {
+            "username": "@Biondaurora29",
+            "time": "2022-12-31 19:47:48"
+          },
+          {
+            "username": "@Fabryrockvox72",
+            "time": "2022-12-31 19:47:51"
+          },
+          {
+            "username": "@CatMoscow57",
+            "time": "2022-12-31 19:47:56"
+          },
+          {
+            "username": "@Fabry_Chi",
+            "time": "2022-12-31 19:47:58"
+          },
+          {
+            "username": "@SammyLove70",
+            "time": "2022-12-31 19:47:59"
+          },
+          {
+            "username": "@andreatw91",
+            "time": "2022-12-31 19:48:00"
+          },
+          {
+            "username": "@AnnaGuerrieri",
+            "time": "2022-12-31 19:48:00"
+          },
+          {
+            "username": "@minovr69",
+            "time": "2022-12-31 19:48:01"
+          },
+          {
+            "username": "@facciamoio",
+            "time": "2022-12-31 19:48:02"
+          },
+          {
+            "username": "@ellepi6",
+            "time": "2022-12-31 19:48:03"
+          },
+          {
+            "username": "@464Rosanna",
+            "time": "2022-12-31 19:48:05"
+          },
+          {
+            "username": "@LmMaggio",
+            "time": "2022-12-31 19:48:05"
+          },
+          {
+            "username": "@74_caps",
+            "time": "2022-12-31 19:48:05"
+          },
+          {
+            "username": "@rsodano56",
+            "time": "2022-12-31 19:48:05"
+          },
+          {
+            "username": "@bellaciao64",
+            "time": "2022-12-31 19:48:06"
+          },
+          {
+            "username": "@2001Fiorista",
+            "time": "2022-12-31 19:48:07"
+          },
+          {
+            "username": "@haterdipablito",
+            "time": "2022-12-31 19:48:09"
+          },
+          {
+            "username": "@H90CJNow",
+            "time": "2022-12-31 19:48:12"
+          },
+          {
+            "username": "@carolina300615",
+            "time": "2022-12-31 19:48:13"
+          },
+          {
+            "username": "@tw4ttersucks",
+            "time": "2022-12-31 19:48:14"
+          },
+          {
+            "username": "@Morgana2008",
+            "time": "2022-12-31 19:48:19"
+          },
+          {
+            "username": "@amatorosalia1",
+            "time": "2022-12-31 19:48:21"
+          },
+          {
+            "username": "@Manu_Cadeddu",
+            "time": "2022-12-31 19:48:23"
+          },
+          {
+            "username": "@AlbertoLetizia2",
+            "time": "2022-12-31 19:48:23"
+          },
+          {
+            "username": "@RobertoScolla",
+            "time": "2022-12-31 19:48:24"
+          },
+          {
+            "username": "@ivandellino",
+            "time": "2022-12-31 19:48:27"
+          },
+          {
+            "username": "@RosaspinaAurora",
+            "time": "2022-12-31 19:48:29"
+          },
+          {
+            "username": "@Chicca60183574",
+            "time": "2022-12-31 19:48:30"
+          },
+          {
+            "username": "@ElenCaSc",
+            "time": "2022-12-31 19:48:30"
+          },
+          {
+            "username": "@wonderwall19801",
+            "time": "2022-12-31 19:48:33"
+          },
+          {
+            "username": "@alessio_morra",
+            "time": "2022-12-31 19:48:40"
+          },
+          {
+            "username": "@Andrikwz",
+            "time": "2022-12-31 19:48:48"
+          },
+          {
+            "username": "@ZioUbaldo",
+            "time": "2022-12-31 19:48:56"
+          },
+          {
+            "username": "@foscospadoni",
+            "time": "2022-12-31 19:49:08"
+          },
+          {
+            "username": "@Kxjyw_66",
+            "time": "2022-12-31 19:49:13"
+          },
+          {
+            "username": "@monica_quaglia",
+            "time": "2022-12-31 19:49:19"
+          },
+          {
+            "username": "@Flamingorules",
+            "time": "2022-12-31 19:49:21"
+          },
+          {
+            "username": "@salbonav",
+            "time": "2022-12-31 19:49:37"
+          },
+          {
+            "username": "@LuigiGaudenzi",
+            "time": "2022-12-31 19:49:43"
+          },
+          {
+            "username": "@elturro666",
+            "time": "2022-12-31 19:49:50"
+          },
+          {
+            "username": "@MarilandTorino",
+            "time": "2022-12-31 19:49:52"
+          },
+          {
+            "username": "@marina52182",
+            "time": "2022-12-31 19:50:04"
+          },
+          {
+            "username": "@AlessandroProc",
+            "time": "2022-12-31 19:50:14"
+          },
+          {
+            "username": "@FanoGaga62",
+            "time": "2022-12-31 19:50:22"
+          },
+          {
+            "username": "@KrieseMakino",
+            "time": "2022-12-31 19:50:26"
+          },
+          {
+            "username": "@UNIOR4NLP",
+            "time": "2022-12-31 19:50:29"
+          },
+          {
+            "username": "@giacomo_81",
+            "time": "2022-12-31 19:50:47"
+          },
+          {
+            "username": "@fnapolisempre83",
+            "time": "2022-12-31 19:51:07"
+          },
+          {
+            "username": "@Igor7500",
+            "time": "2022-12-31 19:51:20"
+          },
+          {
+            "username": "@luth210",
+            "time": "2022-12-31 19:51:21"
+          },
+          {
+            "username": "@SaBattagliaSa",
+            "time": "2022-12-31 19:51:54"
+          }
+        ],
+        "grafico": {
+          "totali": "171",
+          "indovinati": "60"
+        }
+      },
+      {
+        "data_puntata": "2022-12-30",
+        "parole": [
+          "GRANDE",
+          "FORTE",
+          "RUSSA",
+          "CADUTA",
+          "TASSO"
+        ],
+        "podio": {
+          "primo": [
+            {
+              "username": "@PTronti",
+              "time": "2022-12-30 19:46:32"
+            }
+          ],
+          "secondo": [
+            {
+              "username": "@GraziaGio1",
+              "time": "2022-12-30 19:46:39"
+            }
+          ],
+          "terzo": [
+            {
+              "username": "@Albertogiacomo5",
+              "time": "2022-12-30 19:46:44"
+            },
+            {
+              "username": "@LuigiGaudenzi",
+              "time": "2022-12-30 19:46:44"
+            }
+          ]
+        },
+        "classifica": [
+          {
+            "username": "@PTronti",
+            "time": "2022-12-30 19:46:32"
+          },
+          {
+            "username": "@GraziaGio1",
+            "time": "2022-12-30 19:46:39"
+          },
+          {
+            "username": "@Albertogiacomo5",
+            "time": "2022-12-30 19:46:44"
+          },
+          {
+            "username": "@LuigiGaudenzi",
+            "time": "2022-12-30 19:46:44"
+          },
+          {
+            "username": "@michtrim",
+            "time": "2022-12-30 19:46:54"
+          },
+          {
+            "username": "@Mario_Molinari",
+            "time": "2022-12-30 19:46:57"
+          },
+          {
+            "username": "@PADAND6",
+            "time": "2022-12-30 19:47:09"
+          },
+          {
+            "username": "@true_colors95",
+            "time": "2022-12-30 19:47:13"
+          },
+          {
+            "username": "@lu_ci61",
+            "time": "2022-12-30 19:47:25"
+          },
+          {
+            "username": "@Rossella_Ao_Ara",
+            "time": "2022-12-30 19:47:27"
+          },
+          {
+            "username": "@RE_dicuori",
+            "time": "2022-12-30 19:47:32"
+          },
+          {
+            "username": "@ladymarian34",
+            "time": "2022-12-30 19:47:32"
+          },
+          {
+            "username": "@madalon721",
+            "time": "2022-12-30 19:47:34"
+          },
+          {
+            "username": "@elisapeccianti",
+            "time": "2022-12-30 19:47:36"
+          },
+          {
+            "username": "@ManySkills1701",
+            "time": "2022-12-30 19:47:40"
+          },
+          {
+            "username": "@Stefan565688098",
+            "time": "2022-12-30 19:47:50"
+          },
+          {
+            "username": "@LmMaggio",
+            "time": "2022-12-30 19:47:58"
+          },
+          {
+            "username": "@UNIOR4NLP",
+            "time": "2022-12-30 19:48:02"
+          },
+          {
+            "username": "@StruzzoSapiens",
+            "time": "2022-12-30 19:48:15"
+          },
+          {
+            "username": "@RobertoScolla",
+            "time": "2022-12-30 19:48:18"
+          },
+          {
+            "username": "@Riccardiologo",
+            "time": "2022-12-30 19:48:18"
+          },
+          {
+            "username": "@LeonebonCettina",
+            "time": "2022-12-30 19:48:23"
+          },
+          {
+            "username": "@FortunatoBille",
+            "time": "2022-12-30 19:48:27"
+          },
+          {
+            "username": "@PaoloMaccari",
+            "time": "2022-12-30 19:48:29"
+          },
+          {
+            "username": "@manovella",
+            "time": "2022-12-30 19:48:31"
+          },
+          {
+            "username": "@amatorosalia1",
+            "time": "2022-12-30 19:48:50"
+          },
+          {
+            "username": "@giulysua",
+            "time": "2022-12-30 19:48:56"
+          },
+          {
+            "username": "@maryrinaldi09",
+            "time": "2022-12-30 19:48:57"
+          },
+          {
+            "username": "@Rosy88927024",
+            "time": "2022-12-30 19:48:58"
+          },
+          {
+            "username": "@dl5o",
+            "time": "2022-12-30 19:49:08"
+          },
+          {
+            "username": "@ZioUbaldo",
+            "time": "2022-12-30 19:49:41"
+          },
+          {
+            "username": "@464Rosanna",
+            "time": "2022-12-30 19:49:42"
+          },
+          {
+            "username": "@michelamariani5",
+            "time": "2022-12-30 19:50:27"
+          },
+          {
+            "username": "@calcioepepe",
+            "time": "2022-12-30 19:50:47"
+          },
+          {
+            "username": "@Kxjyw_66",
+            "time": "2022-12-30 19:51:24"
+          },
+          {
+            "username": "@Fabryrockvox72",
+            "time": "2022-12-30 19:51:52"
+          },
+          {
+            "username": "@giuliana_63",
+            "time": "2022-12-30 19:51:52"
+          },
+          {
+            "username": "@mmolena69",
+            "time": "2022-12-30 19:52:01"
+          },
+          {
+            "username": "@RosaspinaAurora",
+            "time": "2022-12-30 19:52:09"
+          },
+          {
+            "username": "@Pam070Pamela",
+            "time": "2022-12-30 19:52:19"
+          },
+          {
+            "username": "@Virus1979C",
+            "time": "2022-12-30 19:52:57"
+          }
+        ],
+        "grafico": {
+          "totali": "212",
+          "indovinati": "41"
+        }
+      },
+      {
+        "data_puntata": "2022-12-29",
+        "parole": [
+          "GASSMAN",
+          "FOLLA",
+          "ERBA",
+          "DOPPIO",
+          "SPECIALE"
+        ],
+        "podio": {
+          "primo": [
+            {
+              "username": "@redfabiuz",
+              "time": "2022-12-29 19:47:28"
+            }
+          ],
+          "secondo": [
+            {
+              "username": "@e_susini",
+              "time": "2022-12-29 19:47:34"
+            }
+          ],
+          "terzo": [
+            {
+              "username": "@CarlaGigia",
+              "time": "2022-12-29 19:47:54"
+            }
+          ]
+        },
+        "classifica": [
+          {
+            "username": "@redfabiuz",
+            "time": "2022-12-29 19:47:28"
+          },
+          {
+            "username": "@e_susini",
+            "time": "2022-12-29 19:47:34"
+          },
+          {
+            "username": "@CarlaGigia",
+            "time": "2022-12-29 19:47:54"
+          },
+          {
+            "username": "@AMoriconi",
+            "time": "2022-12-29 19:47:57"
+          },
+          {
+            "username": "@Fabry_Chi",
+            "time": "2022-12-29 19:47:59"
+          },
+          {
+            "username": "@AgoricK",
+            "time": "2022-12-29 19:48:00"
+          },
+          {
+            "username": "@carlo_magnani",
+            "time": "2022-12-29 19:48:00"
+          },
+          {
+            "username": "@nesmagoo",
+            "time": "2022-12-29 19:48:01"
+          },
+          {
+            "username": "@carone_savino",
+            "time": "2022-12-29 19:48:09"
+          },
+          {
+            "username": "@ellepi6",
+            "time": "2022-12-29 19:48:10"
+          },
+          {
+            "username": "@giulysua",
+            "time": "2022-12-29 19:48:11"
+          },
+          {
+            "username": "@focaccinauomo",
+            "time": "2022-12-29 19:48:13"
+          },
+          {
+            "username": "@PADAND6",
+            "time": "2022-12-29 19:48:14"
+          },
+          {
+            "username": "@Manu_Cadeddu",
+            "time": "2022-12-29 19:48:15"
+          },
+          {
+            "username": "@pattanna66",
+            "time": "2022-12-29 19:48:17"
+          },
+          {
+            "username": "@AlbertoLetizia2",
+            "time": "2022-12-29 19:48:21"
+          },
+          {
+            "username": "@frankkorti",
+            "time": "2022-12-29 19:48:21"
+          },
+          {
+            "username": "@Virus1979C",
+            "time": "2022-12-29 19:48:25"
+          },
+          {
+            "username": "@Antogit04",
+            "time": "2022-12-29 19:48:25"
+          },
+          {
+            "username": "@464Rosanna",
+            "time": "2022-12-29 19:48:28"
+          },
+          {
+            "username": "@Stefan565688098",
+            "time": "2022-12-29 19:48:29"
+          },
+          {
+            "username": "@Mario_Molinari",
+            "time": "2022-12-29 19:48:29"
+          },
+          {
+            "username": "@Wannabesciampi",
+            "time": "2022-12-29 19:48:38"
+          },
+          {
+            "username": "@amatorosalia1",
+            "time": "2022-12-29 19:48:41"
+          },
+          {
+            "username": "@minovr69",
+            "time": "2022-12-29 19:48:42"
+          },
+          {
+            "username": "@RobertoScolla",
+            "time": "2022-12-29 19:48:50"
+          },
+          {
+            "username": "@StruzzoSapiens",
+            "time": "2022-12-29 19:48:52"
+          },
+          {
+            "username": "@maurizioneri79",
+            "time": "2022-12-29 19:48:57"
+          },
+          {
+            "username": "@r0s4nn4",
+            "time": "2022-12-29 19:48:57"
+          },
+          {
+            "username": "@Geo_Metra",
+            "time": "2022-12-29 19:49:00"
+          },
+          {
+            "username": "@t_sico",
+            "time": "2022-12-29 19:49:00"
+          },
+          {
+            "username": "@Gianna2119",
+            "time": "2022-12-29 19:49:03"
+          },
+          {
+            "username": "@attilavit",
+            "time": "2022-12-29 19:49:08"
+          },
+          {
+            "username": "@gugli_l",
+            "time": "2022-12-29 19:49:09"
+          },
+          {
+            "username": "@GuglielmaAV",
+            "time": "2022-12-29 19:49:09"
+          },
+          {
+            "username": "@ElenCaSc",
+            "time": "2022-12-29 19:49:11"
+          },
+          {
+            "username": "@stefy_vt",
+            "time": "2022-12-29 19:49:14"
+          },
+          {
+            "username": "@Kxjyw_66",
+            "time": "2022-12-29 19:49:15"
+          },
+          {
+            "username": "@TDan74",
+            "time": "2022-12-29 19:49:18"
+          },
+          {
+            "username": "@ZarIvan70",
+            "time": "2022-12-29 19:49:19"
+          },
+          {
+            "username": "@Gio_Delfi",
+            "time": "2022-12-29 19:49:29"
+          },
+          {
+            "username": "@Elda31977439",
+            "time": "2022-12-29 19:49:33"
+          },
+          {
+            "username": "@paolorizzo79",
+            "time": "2022-12-29 19:49:38"
+          },
+          {
+            "username": "@Monica733344032",
+            "time": "2022-12-29 19:49:53"
+          },
+          {
+            "username": "@PiaTarantino",
+            "time": "2022-12-29 19:49:57"
+          },
+          {
+            "username": "@sabrivi2000",
+            "time": "2022-12-29 19:50:03"
+          },
+          {
+            "username": "@madalon721",
+            "time": "2022-12-29 19:50:12"
+          },
+          {
+            "username": "@GallinaRosina",
+            "time": "2022-12-29 19:50:21"
+          },
+          {
+            "username": "@SaBattagliaSa",
+            "time": "2022-12-29 19:50:43"
+          },
+          {
+            "username": "@vertigo70g",
+            "time": "2022-12-29 19:50:49"
+          },
+          {
+            "username": "@Vorlander13",
+            "time": "2022-12-29 19:51:17"
+          },
+          {
+            "username": "@alessandra14961",
+            "time": "2022-12-29 19:51:35"
+          },
+          {
+            "username": "@LaLuneSurtout",
+            "time": "2022-12-29 19:51:39"
+          },
+          {
+            "username": "@PTronti",
+            "time": "2022-12-29 19:51:40"
+          }
+        ],
+        "grafico": {
+          "totali": "192",
+          "indovinati": "54"
+        }
+      },
+      {
+        "data_puntata": "2022-12-28",
+        "parole": [
+          "PARLARE",
+          "FIGLIO",
+          "SOTTO",
+          "MANICA",
+          "SALTO"
+        ],
+        "podio": {
+          "primo": [
+            {
+              "username": "@gugli_l",
+              "time": "2022-12-28 19:45:04"
+            }
+          ],
+          "secondo": [
+            {
+              "username": "@kriskrisby",
+              "time": "2022-12-28 19:45:05"
+            }
+          ],
+          "terzo": [
+            {
+              "username": "@giulysua",
+              "time": "2022-12-28 19:45:10"
+            }
+          ]
+        },
+        "classifica": [
+          {
+            "username": "@gugli_l",
+            "time": "2022-12-28 19:45:04"
+          },
+          {
+            "username": "@kriskrisby",
+            "time": "2022-12-28 19:45:05"
+          },
+          {
+            "username": "@giulysua",
+            "time": "2022-12-28 19:45:10"
+          },
+          {
+            "username": "@TDan74",
+            "time": "2022-12-28 19:45:12"
+          },
+          {
+            "username": "@AMoriconi",
+            "time": "2022-12-28 19:45:15"
+          },
+          {
+            "username": "@MartaAbbiati",
+            "time": "2022-12-28 19:45:17"
+          },
+          {
+            "username": "@firenzeviola63",
+            "time": "2022-12-28 19:45:17"
+          },
+          {
+            "username": "@PAOLANURNBERG",
+            "time": "2022-12-28 19:45:22"
+          },
+          {
+            "username": "@PADAND6",
+            "time": "2022-12-28 19:45:24"
+          },
+          {
+            "username": "@ladymarian34",
+            "time": "2022-12-28 19:45:27"
+          },
+          {
+            "username": "@Mario_Molinari",
+            "time": "2022-12-28 19:45:27"
+          },
+          {
+            "username": "@marcomannino66",
+            "time": "2022-12-28 19:45:29"
+          },
+          {
+            "username": "@Francisebasta",
+            "time": "2022-12-28 19:45:30"
+          },
+          {
+            "username": "@CINDY2099",
+            "time": "2022-12-28 19:45:30"
+          },
+          {
+            "username": "@paologargiulo1",
+            "time": "2022-12-28 19:45:30"
+          },
+          {
+            "username": "@DaddyArly",
+            "time": "2022-12-28 19:45:38"
+          },
+          {
+            "username": "@architetto66",
+            "time": "2022-12-28 19:45:40"
+          },
+          {
+            "username": "@Daniyel_Babe",
+            "time": "2022-12-28 19:45:41"
+          },
+          {
+            "username": "@Monica733344032",
+            "time": "2022-12-28 19:45:45"
+          },
+          {
+            "username": "@KonstanzFI",
+            "time": "2022-12-28 19:45:46"
+          },
+          {
+            "username": "@PTronti",
+            "time": "2022-12-28 19:45:47"
+          },
+          {
+            "username": "@senzacane",
+            "time": "2022-12-28 19:45:48"
+          },
+          {
+            "username": "@TRuSt_n0_On3",
+            "time": "2022-12-28 19:45:48"
+          },
+          {
+            "username": "@IvanoArgiolas",
+            "time": "2022-12-28 19:45:49"
+          },
+          {
+            "username": "@LorenzoDeGirol1",
+            "time": "2022-12-28 19:45:51"
+          },
+          {
+            "username": "@pattanna66",
+            "time": "2022-12-28 19:45:53"
+          },
+          {
+            "username": "@bellaciao64",
+            "time": "2022-12-28 19:45:54"
+          },
+          {
+            "username": "@AntoniaBottini",
+            "time": "2022-12-28 19:45:56"
+          },
+          {
+            "username": "@giuliana_63",
+            "time": "2022-12-28 19:45:59"
+          },
+          {
+            "username": "@RobertoScolla",
+            "time": "2022-12-28 19:46:00"
+          },
+          {
+            "username": "@MonicaBlengino",
+            "time": "2022-12-28 19:46:04"
+          },
+          {
+            "username": "@FortunatoBille",
+            "time": "2022-12-28 19:46:05"
+          },
+          {
+            "username": "@cla7cf",
+            "time": "2022-12-28 19:46:05"
+          },
+          {
+            "username": "@PaolaBiondani",
+            "time": "2022-12-28 19:46:08"
+          },
+          {
+            "username": "@mariasalent",
+            "time": "2022-12-28 19:46:09"
+          },
+          {
+            "username": "@KrieseMakino",
+            "time": "2022-12-28 19:46:10"
+          },
+          {
+            "username": "@Nessuno16979551",
+            "time": "2022-12-28 19:46:13"
+          },
+          {
+            "username": "@lillibeth116",
+            "time": "2022-12-28 19:46:21"
+          },
+          {
+            "username": "@AlePassanti",
+            "time": "2022-12-28 19:46:21"
+          },
+          {
+            "username": "@paolociancarini",
+            "time": "2022-12-28 19:46:25"
+          },
+          {
+            "username": "@StruzzoSapiens",
+            "time": "2022-12-28 19:46:27"
+          },
+          {
+            "username": "@sandrocavazzana",
+            "time": "2022-12-28 19:46:29"
+          },
+          {
+            "username": "@madalon721",
+            "time": "2022-12-28 19:46:31"
+          },
+          {
+            "username": "@marina52182",
+            "time": "2022-12-28 19:46:32"
+          },
+          {
+            "username": "@luciorolly",
+            "time": "2022-12-28 19:46:33"
+          },
+          {
+            "username": "@Dolcichef",
+            "time": "2022-12-28 19:46:36"
+          },
+          {
+            "username": "@alessandra14961",
+            "time": "2022-12-28 19:46:38"
+          },
+          {
+            "username": "@mmolena69",
+            "time": "2022-12-28 19:46:42"
+          },
+          {
+            "username": "@LucaNigroTW",
+            "time": "2022-12-28 19:46:43"
+          },
+          {
+            "username": "@GigilongLuigi",
+            "time": "2022-12-28 19:46:43"
+          },
+          {
+            "username": "@Antogit04",
+            "time": "2022-12-28 19:46:45"
+          },
+          {
+            "username": "@CristinaSpecial",
+            "time": "2022-12-28 19:46:46"
+          },
+          {
+            "username": "@FrancoPapa3",
+            "time": "2022-12-28 19:46:50"
+          },
+          {
+            "username": "@Beba37640865",
+            "time": "2022-12-28 19:46:52"
+          },
+          {
+            "username": "@marigall24",
+            "time": "2022-12-28 19:46:55"
+          },
+          {
+            "username": "@Ginotweet",
+            "time": "2022-12-28 19:47:08"
+          },
+          {
+            "username": "@ValciPaolo",
+            "time": "2022-12-28 19:47:10"
+          },
+          {
+            "username": "@PPFaronato",
+            "time": "2022-12-28 19:47:21"
+          },
+          {
+            "username": "@toncoc",
+            "time": "2022-12-28 19:47:22"
+          },
+          {
+            "username": "@lidiamargherita",
+            "time": "2022-12-28 19:47:27"
+          },
+          {
+            "username": "@LorenziAndrea2",
+            "time": "2022-12-28 19:47:29"
+          },
+          {
+            "username": "@amatorosalia1",
+            "time": "2022-12-28 19:47:31"
+          },
+          {
+            "username": "@macaone_26",
+            "time": "2022-12-28 19:47:31"
+          },
+          {
+            "username": "@frankkorti",
+            "time": "2022-12-28 19:47:33"
+          },
+          {
+            "username": "@stefy_vt",
+            "time": "2022-12-28 19:47:39"
+          },
+          {
+            "username": "@redfabiuz",
+            "time": "2022-12-28 19:47:46"
+          },
+          {
+            "username": "@robertatrapassi",
+            "time": "2022-12-28 19:47:50"
+          },
+          {
+            "username": "@_ricc4rdo",
+            "time": "2022-12-28 19:47:55"
+          },
+          {
+            "username": "@yosiefit",
+            "time": "2022-12-28 19:48:00"
+          },
+          {
+            "username": "@tvwatcherit",
+            "time": "2022-12-28 19:48:01"
+          },
+          {
+            "username": "@74_caps",
+            "time": "2022-12-28 19:48:02"
+          },
+          {
+            "username": "@wandavero",
+            "time": "2022-12-28 19:48:02"
+          },
+          {
+            "username": "@ishtar3000",
+            "time": "2022-12-28 19:48:06"
+          },
+          {
+            "username": "@acerracido",
+            "time": "2022-12-28 19:48:24"
+          },
+          {
+            "username": "@Kxjyw_66",
+            "time": "2022-12-28 19:48:26"
+          },
+          {
+            "username": "@LeonebonCettina",
+            "time": "2022-12-28 19:48:32"
+          },
+          {
+            "username": "@LauraFo2022",
+            "time": "2022-12-28 19:48:37"
+          },
+          {
+            "username": "@LucaUxxx",
+            "time": "2022-12-28 19:48:40"
+          },
+          {
+            "username": "@nonsipuo",
+            "time": "2022-12-28 19:48:51"
+          },
+          {
+            "username": "@Elda31977439",
+            "time": "2022-12-28 19:48:59"
+          },
+          {
+            "username": "@PIF58",
+            "time": "2022-12-28 19:49:34"
+          },
+          {
+            "username": "@Fabryrockvox72",
+            "time": "2022-12-28 19:49:35"
+          },
+          {
+            "username": "@AdamantinaCecia",
+            "time": "2022-12-28 19:49:47"
+          },
+          {
+            "username": "@ang3la_tr3",
+            "time": "2022-12-28 19:50:10"
+          },
+          {
+            "username": "@GiuntaIannellom",
+            "time": "2022-12-28 19:50:19"
+          },
+          {
+            "username": "@DIANAELISABETTA",
+            "time": "2022-12-28 19:51:23"
+          },
+          {
+            "username": "@CinieriV",
+            "time": "2022-12-28 19:51:32"
+          },
+          {
+            "username": "@anna_frank2",
+            "time": "2022-12-28 19:51:43"
+          },
+          {
+            "username": "@ZanelliNadia",
+            "time": "2022-12-28 19:51:46"
+          }
+        ],
+        "grafico": {
+          "totali": "229",
+          "indovinati": "89"
+        }
+      },
+      {
+        "data_puntata": "2022-12-27",
+        "parole": [
+          "FUORI",
+          "SENZA",
+          "STUDIARE",
+          "COMPAGNO",
+          "SECONDO"
+        ],
+        "podio": {
+          "primo": [
+            {
+              "username": "@RBoattini",
+              "time": "2022-12-27 19:46:03"
+            }
+          ],
+          "secondo": [
+            {
+              "username": "@RaffRiff",
+              "time": "2022-12-27 19:47:15"
+            }
+          ],
+          "terzo": [
+            {
+              "username": "@frantangoba",
+              "time": "2022-12-27 19:47:18"
+            }
+          ]
+        },
+        "classifica": [
+          {
+            "username": "@RBoattini",
+            "time": "2022-12-27 19:46:03"
+          },
+          {
+            "username": "@RaffRiff",
+            "time": "2022-12-27 19:47:15"
+          },
+          {
+            "username": "@frantangoba",
+            "time": "2022-12-27 19:47:18"
+          },
+          {
+            "username": "@lidiarusso09",
+            "time": "2022-12-27 19:49:16"
+          },
+          {
+            "username": "@Alessan63953054",
+            "time": "2022-12-27 19:50:14"
+          },
+          {
+            "username": "@Chicca60183574",
+            "time": "2022-12-27 19:50:55"
+          },
+          {
+            "username": "@Daniyel_Babe",
+            "time": "2022-12-27 19:51:10"
+          },
+          {
+            "username": "@CristinaSpecial",
+            "time": "2022-12-27 19:51:19"
+          },
+          {
+            "username": "@LaLuneSurtout",
+            "time": "2022-12-27 19:51:22"
+          },
+          {
+            "username": "@NadiaZanelli1",
+            "time": "2022-12-27 19:51:26"
+          },
+          {
+            "username": "@ladymarian34",
+            "time": "2022-12-27 19:51:32"
+          },
+          {
+            "username": "@RosaspinaAurora",
+            "time": "2022-12-27 19:51:35"
+          },
+          {
+            "username": "@CamilloDiFabio",
+            "time": "2022-12-27 19:51:35"
+          },
+          {
+            "username": "@464Rosanna",
+            "time": "2022-12-27 19:51:35"
+          },
+          {
+            "username": "@LadySgrazia",
+            "time": "2022-12-27 19:51:36"
+          },
+          {
+            "username": "@LellaFastidiosa",
+            "time": "2022-12-27 19:51:39"
+          },
+          {
+            "username": "@simposiummaximo",
+            "time": "2022-12-27 19:51:43"
+          },
+          {
+            "username": "@Geo_Metra",
+            "time": "2022-12-27 19:51:45"
+          },
+          {
+            "username": "@ElenCaSc",
+            "time": "2022-12-27 19:51:47"
+          },
+          {
+            "username": "@silvia_flanny21",
+            "time": "2022-12-27 19:51:49"
+          },
+          {
+            "username": "@amatorosalia1",
+            "time": "2022-12-27 19:51:50"
+          },
+          {
+            "username": "@wandavero",
+            "time": "2022-12-27 19:51:52"
+          },
+          {
+            "username": "@AntoniaBottini",
+            "time": "2022-12-27 19:51:55"
+          },
+          {
+            "username": "@BlackWhite1977",
+            "time": "2022-12-27 19:51:56"
+          },
+          {
+            "username": "@Emanuel23137303",
+            "time": "2022-12-27 19:51:58"
+          }
+        ],
+        "grafico": {
+          "totali": "148",
+          "indovinati": "25"
+        }
+      },
+      {
+        "data_puntata": "2022-12-26",
+        "parole": [
+          "LIVELLO",
+          "MASCAGNI",
+          "TASCA",
+          "COPERTA",
+          "BUCATO"
+        ],
+        "podio": {
+          "primo": [
+            {
+              "username": "@Francisebasta",
+              "time": "2022-12-26 19:45:09"
+            }
+          ],
+          "secondo": [
+            {
+              "username": "@H90CJNow",
+              "time": "2022-12-26 19:45:17"
+            }
+          ],
+          "terzo": [
+            {
+              "username": "@74_caps",
+              "time": "2022-12-26 19:45:29"
+            }
+          ]
+        },
+        "classifica": [
+          {
+            "username": "@Francisebasta",
+            "time": "2022-12-26 19:45:09"
+          },
+          {
+            "username": "@H90CJNow",
+            "time": "2022-12-26 19:45:17"
+          },
+          {
+            "username": "@74_caps",
+            "time": "2022-12-26 19:45:29"
+          },
+          {
+            "username": "@Fabry_Chi",
+            "time": "2022-12-26 19:45:42"
+          },
+          {
+            "username": "@RobertoScolla",
+            "time": "2022-12-26 19:45:42"
+          },
+          {
+            "username": "@RobertaBaroni10",
+            "time": "2022-12-26 19:45:48"
+          },
+          {
+            "username": "@firenzeviola63",
+            "time": "2022-12-26 19:45:52"
+          },
+          {
+            "username": "@TremoladaTiz",
+            "time": "2022-12-26 19:46:00"
+          },
+          {
+            "username": "@464Rosanna",
+            "time": "2022-12-26 19:46:16"
+          },
+          {
+            "username": "@MarnaSilimbani",
+            "time": "2022-12-26 19:46:16"
+          },
+          {
+            "username": "@clara_lotte",
+            "time": "2022-12-26 19:46:21"
+          },
+          {
+            "username": "@mmolena69",
+            "time": "2022-12-26 19:46:29"
+          },
+          {
+            "username": "@nfaby83",
+            "time": "2022-12-26 19:46:33"
+          },
+          {
+            "username": "@ElenCaSc",
+            "time": "2022-12-26 19:46:36"
+          },
+          {
+            "username": "@Macripeda",
+            "time": "2022-12-26 19:46:41"
+          },
+          {
+            "username": "@laneve_bianca",
+            "time": "2022-12-26 19:46:44"
+          },
+          {
+            "username": "@ChiccaTorelli",
+            "time": "2022-12-26 19:46:52"
+          },
+          {
+            "username": "@amatorosalia1",
+            "time": "2022-12-26 19:47:12"
+          },
+          {
+            "username": "@LaLuneSurtout",
+            "time": "2022-12-26 19:47:14"
+          },
+          {
+            "username": "@Teresa_La_Vispa",
+            "time": "2022-12-26 19:47:16"
+          },
+          {
+            "username": "@frantangoba",
+            "time": "2022-12-26 19:47:23"
+          },
+          {
+            "username": "@hdcase1",
+            "time": "2022-12-26 19:47:26"
+          },
+          {
+            "username": "@lu_ci61",
+            "time": "2022-12-26 19:47:28"
+          },
+          {
+            "username": "@cristinafalasch",
+            "time": "2022-12-26 19:47:29"
+          },
+          {
+            "username": "@margher61541344",
+            "time": "2022-12-26 19:47:32"
+          },
+          {
+            "username": "@alessio_morra",
+            "time": "2022-12-26 19:47:36"
+          },
+          {
+            "username": "@naominairobii",
+            "time": "2022-12-26 19:47:39"
+          },
+          {
+            "username": "@tweet_tugurio",
+            "time": "2022-12-26 19:47:41"
+          },
+          {
+            "username": "@NINONipras",
+            "time": "2022-12-26 19:47:50"
+          },
+          {
+            "username": "@marcochiarab81",
+            "time": "2022-12-26 19:48:11"
+          },
+          {
+            "username": "@Kxjyw_66",
+            "time": "2022-12-26 19:48:12"
+          },
+          {
+            "username": "@anna_frank2",
+            "time": "2022-12-26 19:48:14"
+          },
+          {
+            "username": "@Mina_vagante1",
+            "time": "2022-12-26 19:48:25"
+          },
+          {
+            "username": "@lidiamargherita",
+            "time": "2022-12-26 19:48:32"
+          },
+          {
+            "username": "@Stefan565688098",
+            "time": "2022-12-26 19:48:38"
+          },
+          {
+            "username": "@ishtar3000",
+            "time": "2022-12-26 19:48:40"
+          },
+          {
+            "username": "@simposiummaximo",
+            "time": "2022-12-26 19:48:43"
+          },
+          {
+            "username": "@LeonebonCettina",
+            "time": "2022-12-26 19:49:01"
+          },
+          {
+            "username": "@Geo_Metra",
+            "time": "2022-12-26 19:49:31"
+          },
+          {
+            "username": "@Stegosauro",
+            "time": "2022-12-26 19:49:42"
+          },
+          {
+            "username": "@UNIOR4NLP",
+            "time": "2022-12-26 19:49:45"
+          },
+          {
+            "username": "@FortunatoBille",
+            "time": "2022-12-26 19:50:02"
+          },
+          {
+            "username": "@CarlaGigia",
+            "time": "2022-12-26 19:50:34"
+          },
+          {
+            "username": "@marina52182",
+            "time": "2022-12-26 19:51:00"
+          },
+          {
+            "username": "@Fabryrockvox72",
+            "time": "2022-12-26 19:51:14"
+          },
+          {
+            "username": "@Albertogiacomo5",
+            "time": "2022-12-26 19:51:31"
+          },
+          {
+            "username": "@Daniyel_Babe",
+            "time": "2022-12-26 19:51:34"
+          },
+          {
+            "username": "@AgoricK",
+            "time": "2022-12-26 19:51:36"
+          },
+          {
+            "username": "@Gianna2119",
+            "time": "2022-12-26 19:51:38"
+          },
+          {
+            "username": "@fr33b1t",
+            "time": "2022-12-26 19:51:47"
+          }
+        ],
+        "grafico": {
+          "totali": "144",
+          "indovinati": "50"
+        }
+      }
+    ],
+    "data_inizio": "2022-12-26",
+    "data_fine": "2023-01-01"
+  }

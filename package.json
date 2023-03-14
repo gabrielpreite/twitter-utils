@@ -1,0 +1,25 @@
+{
+  "name": "twitterutils",
+  "version": "1.0.0",
+  "description": "-Generale Per buildare il progetto (su linux) basta eseguire il file build_linux.sh Contiene i comandi docker che vedi sotto. (potrebbe essere necessario modificare i permessi del file con chmod +x build_linux.sh)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.hjkl.gq/team4/twitterutils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^29.3.1",
+    "node-fetch": "^3.3.0"
+  }
+}

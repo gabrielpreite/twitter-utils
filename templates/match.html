@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>SoccerUtils</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/soccer.css') }}" />
+
+    <!----BOOSTRAP-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/352b6e21d2.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link href="http://fonts.cdnfonts.com/css/chirp-2" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.16.3.min.js"></script>
+
+    <!--JavaScript Scripts-->
+    <script src="{{url_for('static', filename='soccer.js')}}"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ url_for('homepage') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('eredita') }}">L'Eredità</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('fantacitorio') }}">Fantacitorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('chess') }}">Chess</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ url_for('soccer') }}">SoccerUtils</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container-fluid" id="title-container">
+            <img src="/static/styles/images/soccer-logo.png" alt="logo-soccer" id="logo">
+        </div>
+
+        <div id="contenitore" class="container-fluid">
+            <hr>
+            <div class="row align-items-center flex-nowrap" id="tweets"></div>
+            <hr>
+
+            <div class="row align-items-center">
+                <div class="col-2" id="lineup-home">
+                    <table class="table justify-content-center" aria-describedby="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Casa</th>
+                                <th scope="col">Ruolo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="starters-home"></tbody>
+                    </table>
+                </div>
+                <div class="col-2" id="home-team"><img src="" alt="home logo" id="home-logo">
+                    <div id="home-name"></div>
+                </div>
+                <div class="col-4" id="score-stats">
+                    <div class="text-center fw-bold" id="score"></div>
+                    <div class="container-fluid" id="stats">
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="tiri-porta-home"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="tiri-porta-start"></div>
+                                    <div class="text-center" id="tiri-porta"></div>
+                                    <div class="text-center" id="tiri-porta-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="tiri-porta-guest"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="tiri-totali-home"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="tiri-totali-start"></div>
+                                    <div class="text-center" id="tiri-totali"></div>
+                                    <div class="text-center" id="tiri-totali-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="tiri-totali-guest"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="falli-home" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="falli-start"></div>
+                                    <div class="text-center" id="falli"></div>
+                                    <div class="text-center" id="falli-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="falli-guest" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="angolo-home" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="angolo-start"></div>
+                                    <div class="text-center" id="angolo"></div>
+                                    <div class="text-center" id="angolo-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="angolo-guest" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="fuorigioco-home"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="fuorigioco-start"></div>
+                                    <div class="text-center" id="fuorigioco"></div>
+                                    <div class="text-center" id="fuorigioco-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="fuorigioco-guest"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="possesso-home"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="possesso-start"></div>
+                                    <div class="text-center" id="possesso"></div>
+                                    <div class="text-center" id="possesso-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="possesso-guest"
+                                        role="progressbar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center">
+                            <div class="col" class="home-stats">
+                                <div class="progress justify-content-end">
+                                    <div class="progress-bar progress-bar-striped" id="parate-home" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" class="desc">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-center" id="parate-start"></div>
+                                    <div class="text-center" id="parate"></div>
+                                    <div class="text-center" id="parate-end"></div>
+                                </div>
+                            </div>
+                            <div class="col" class="guest-stats">
+                                <div class="progress justify-content-start">
+                                    <div class="progress-bar progress-bar-striped" id="parate-guest" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid" id="events">
+                        <div class="row">
+                            <div class="col" id="events-home">
+                                <table class="table-borderless justify-content-start" aria-describedby="events_home">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ehome-body"></tbody>
+                                </table>
+                            </div>
+                            <div class="col" id="events-guest">
+                                <table class="table-borderless justify-content-end" aria-describedby="events_guest">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="eguest-body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2" id="guest-team"><img src="" alt="guest logo" id="guest-logo">
+                    <div id="guest-name"></div>
+                </div>
+                <div class="col-2" id="lineup-guest">
+                    <table class="table justify-content-center" aria-describedby="lineup_guest">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ospiti</th>
+                                <th scope="col">Ruolo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="starters-guest"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="h3 text-center pt-4 pb-2" id="titolo-grafico">Tweet al minuto</div>
+                <div class="row" id="grafico"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col text-center">
+                    <h3>Gallery</h3>
+                </div>
+            </div>
+            <div class="row flex-nowrap" id="tweet-pics"></div>
+            <hr>
+        </div>
+
+        <script>
+            var dettagli = {{ dettagli| tojson | safe}}
+            var results = {{ twitter| tojson | safe}}
+            dettagli = JSON.parse(dettagli)
+            printMatch(dettagli)
+            printTweets(results)
+            printImages(results)
+            tweetsScroll()
+            picsScroll()
+
+            // grafico
+            var data = [{
+                x: results["meta"]["grafico_barre_minuti"]["x"],
+                y: results["meta"]["grafico_barre_minuti"]["y"],
+                type: "scatter",
+            }]
+
+            var layout = {
+                height: 400,
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                margin: { t: 0 },
+                xaxis: {
+                    dtick: 2,
+                    tickangle: 'auto',
+                    gridcolor: "#d3d3d3",
+                    gridwidth: 0.3
+                },
+                yaxis: {
+                    gridcolor: "#d3d3d3",
+                    gridwidth: 0.3
+                },
+                shapes: [{// highlight interval                    
+                    type: 'rect',
+                    // x-reference is assigned to the x-values
+                    xref: 'x',
+                    // y-reference is assigned to the plot paper [0,1]
+                    yref: 'paper',
+                    x0: '45',
+                    y0: 0,
+                    x1: '60',
+                    y1: 1,
+                    fillcolor: '#ff0000',
+                    opacity: 0.2,
+                    line: {
+                        width: 0
+                    },
+                    name: 'Intervallo'
+                }],
+                annotations: [{
+                    showarrow: false,
+                    text: "<b>Intervallo</b>",
+                    align: "center",
+                    x: 52.5,
+                    xanchor: "center",
+                    y: 20,
+                    yanchor: "bottom",
+                    font: {
+                        size: 20
+                    }
+                }]
+            }
+
+            Plotly.newPlot('grafico', data, layout);            
+        </script>
+
+
+    </body>
+
+</html>

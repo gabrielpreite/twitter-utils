@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/leaflet.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}" />
+
+    <!----BOOSTRAP-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/352b6e21d2.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link href="http://fonts.cdnfonts.com/css/chirp-2" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.16.3.min.js"></script>
+
+    {% if b_risultati %}
+    <script>
+        frequency_list = {{ frequency_list | tojson | safe }}
+        frequency_list = JSON.parse(frequency_list)
+        var results = {{ results| tojson | safe}}
+        results = JSON.parse(results)
+    </script>
+    {% endif %}
+
+    <!--JavaScript Scripts-->
+    <script src="{{url_for('static', filename='leaflet.js')}}"></script>
+    <script src="{{url_for('static', filename='d3.v3.min.js')}}"></script>
+    <script src="{{url_for('static', filename='d3.layout.cloud.js')}}"></script>
+    <script src="{{url_for('static', filename='geo.js')}}"></script>
+    <script src="{{url_for('static', filename='cloud.js')}}"></script>
+    <script src="{{url_for('static', filename='statistiche.js')}}"></script>
+    <script src="{{url_for('static', filename='timeline.js')}}"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('eredita') }}">L'Eredità</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('fantacitorio') }}">Fantacitorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('chess') }}">Chess</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('soccer') }}">SoccerUtils</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="logo" onclick="window.location.href=window.location.href;">Logo Here </h1>
+
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <form method="post" action="/" onsubmit="return validazione()">
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn searchbar-style" style="color: #1d9bf0;
+                        border-color: #1d9bf0;"><em class="fa-solid fa-magnifying-glass"></em></button>
+
+                        <input class="form-control input-sm searchbar-style" type="text" placeholder="Search"
+                            name="query" id="query">
+
+                        <select class="form-select" id="filtro" name="filtro" aria-label="Select">
+                            <option selected value="keyword" id="keyword" onclick="otherSearch()">
+                                by
+                                keyword</option>
+                            <option value="username" id="username" onclick="otherSearch()">
+                                by
+                                username</option>
+                            <option value="location" id="location" onclick="locationSearch();">
+                                by
+                                location</option>
+                            <option value="hashtag" id="hashtag" onclick="otherSearch()">
+                                by
+                                hashtag</option>
+                        </select>
+
+                    </div>
+
+                    <div class="d-flex">
+                        <input type="radio" class="btn-check" name="lang" value="all" id="all" autocomplete="off"
+                            checked>
+                        <label class="btn btn-outline-primary" for="all">ALL</label>
+
+                        <input type="radio" class="btn-check" name="lang" value="it" id="it" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="it">IT</label>
+
+                        <input type="radio" class="btn-check" name="lang" value="en" id="en" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="en">EN</label>
+
+                        <input type="radio" class="btn-check" name="lang" value="fr" id="fr" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="fr">FR</label>
+
+                        <input type="radio" class="btn-check" name="lang" value="es" id="es" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="es">ES</label>
+
+                        <div class="p-2">
+                            <label for="range" class="form-label d-flex" id="tweets-number">Mostra 10 tweets</label>
+                        </div>
+                        <div class="p-2 flex-grow-1">
+                            <input type="range" name="max_tweets" class="form-range d" id="tweets-range" min="10"
+                                max="100" step="5" onchange="updateRange()" value="10">
+                        </div>
+
+                        <label for="data_inizio"></label>
+                        <input type="date" class="border-primary rounded" id="data_inizio" name="data_inizio">
+                        <label for="data_fine"></label>
+                        <input type="date" class="border-primary rounded" id="data_fine" name="data_fine">
+
+                        <button type="button" class="btn btn-primary m-2" onclick="toggleCloud()"><em
+                                class="fa-solid fa-cloud"></em></button>
+                        <button type="button" class="btn btn-primary m-2" onclick="toggleStats()"><em
+                                class="fa-solid fa-chart-pie"></em></button>
+                        <button type="button" class="btn btn-primary m-2" onclick="toggleTimeline()"><em
+                                class="fa-solid fa-chart-column"></em></button>
+
+                    </div>
+
+                    <br>
+                    <div class="container-fluid" id="location-tab">
+                        <div class="row text-center">
+                            <div class="col"> <label for="latitudine">Lat</label>
+                                <input type="number" id="latitudine" name="latitudine" disabled="true"
+                                    step="0.000000000000001" min="-90" max="90">
+                            </div>
+                            <div class="col"><label for="longitudine">Long</label>
+                                <input type="number" id="longitudine" name="longitudine" disabled="true"
+                                    step="0.000000000000001" min="-180" max="180">
+                            </div>
+                            <div id="area">
+                                <label for="area">Area</label>
+                                <input type="number" placeholder="Inserire area (km)" name="area" min="10" max="40"
+                                    step="1">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pt-3">
+                            <div id="map" style="height: 250px; width: 500px"></div>
+                        </div>
+                        <div class="row justify-content-center pt-3">
+                            <div class="col-11"><button type="button" class="btn btn-outline-primary mb-3"
+                                    onclick="hideMap()">Nascondi
+                                    Mappa</button></div>
+                            <div class="col-1"><button type="button" class="btn btn-primary mb-3"
+                                    onclick="connectMarkers()"><em class="fa-solid fa-route"></em></button></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const map = L.map('map').setView([44.49, 11.34], 13);
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        map.on('click', onClickCoord)
+    </script>
+
+    <div class="container-fluid">
+        <div class="row">
+            {% block risultati %}
+            {% if b_risultati %}
+            <div class="col " id="risultati">
+                {% include "risultati.html" %}
+            </div>
+            {% endif %}
+            {% endblock %}
+
+            {% block nuvola %}
+            {% if b_nuvola %}
+            <div class="col" id="nuvola">
+
+            </div>
+            <script>
+                cloud()
+                highlight()
+            </script>
+            {% endif %}
+            {% endblock %}
+
+            {% block statistiche %}
+            {% if b_statistiche %}
+            <div class="col" id="statistiche">
+
+            </div>
+            <script>
+                // DA FIXARE!!!
+                Plotly.newPlot('statistiche', dataSTAT, layoutSTAT);
+                $("#statistiche").hide();
+                $(".surface").click(function () {
+                    switch (event.target.style.fill) {
+                        case 'rgb(34, 139, 34)':
+                            $(".positive").css('border-color', 'rgb(34, 139, 34)')
+                            break;
+                        case 'rgb(0, 71, 171)':
+
+                            break;
+                        case 'rgb(238, 75, 43)':
+
+                            break;
+                        default:
+                    }
+                })
+            </script>
+            {% endif %}
+            {% endblock %}
+
+            {% block timeline %}
+            {% if b_timeline %}
+            <div class="col" id="timeline">
+
+            </div>
+            <script>
+                Plotly.newPlot('timeline', dataTL, layoutTL);
+                $("#timeline").hide();
+            </script>
+            {% endif %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!--sfondo animato-->
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+<footer></footer>
+
+</html>
+
+<script src="{{url_for('static', filename='ui.js')}}"></script>

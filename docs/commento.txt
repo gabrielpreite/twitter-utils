@@ -1,0 +1,8 @@
+1° dicembre
+Gabriel Preite ha il maggior numero di commit, seguito da Tassi e altri. Brusori ne ha fatti all'inizio (setup librerie?) e dopo poco. No pair programming?
+Codice se ne vede poco, forse presente in altri branch? Sembra essere molto concentrato sulla geolocalizzazione. 
+Non si vedono test, ne di unità nè di integrazione, né E2E.
+Tracce di sonarqube, ma non il suo output
+Taiga sembra usato intensamente (anche come deposito documenti)
+
+

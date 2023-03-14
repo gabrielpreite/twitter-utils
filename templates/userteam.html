@@ -1,0 +1,17 @@
+Ecco la squadra di @{{nome}}:
+<script>
+    var tweet = {{ user_team| tojson | safe}}
+    var newDiv = document.getElementById("userteam")
+    if (tweet.hasOwnProperty("attachments")) {
+        media = document.createElement("img")
+        media.src = tweet["attachments"]["media"]["url"]
+        media.alt = "team"
+        newDiv.appendChild(media)
+    } else {
+        text = document.createElement("p")
+        text.setAttribute("class", "tweet-text card-text pt-2")
+        text.innerHTML = "L'utente cercato non ha una squadra"
+        cardBody.appendChild(text)
+    }
+
+</script>

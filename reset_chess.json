@@ -1,0 +1,23 @@
+{
+    "games": [
+        {
+            "tweetaccount": "default",
+            "playing": false,
+            "side": true,
+            "board": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+            "boardsvg": "",
+            "move_time": 1,
+            "start_timer": "",
+            "white": 0,
+            "black": 0,
+            "draw": 0,
+            "white_tweets": [],
+            "black_tweets": [],
+            "history": [],
+            "history_white": [],
+            "history_black": [],
+            "last_win": "",
+            "game_ending": ""
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Fantacitorio</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/fanta.css') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis">
+
+
+    <!----BOOSTRAP-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/352b6e21d2.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link href="http://fonts.cdnfonts.com/css/chirp-2" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+    <!--JavaScript Scripts-->
+    <script src="{{url_for('static', filename='fantacitorio.js')}}"></script>
+    <script src="{{url_for('static', filename='chess.js')}}"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{ url_for('homepage') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('eredita') }}">L'Eredità</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ url_for('fantacitorio') }}">Fantacitorio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('chess') }}">Chess</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('soccer') }}">SoccerUtils</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container-fluid" id="title-container">
+            <img src="/static/styles/images/fantacitorio.png" alt="montecitorio" id="montecitorio">
+            <div id="title">Fantacitorio</div>
+        </div>
+
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <h2 class="text-center fw-bold" id="classifica-title"><i class="fa-solid fa-ranking-star"></i>
+                        CLASSIFICA</h2>
+                    <div id="classifica" style="overflow: scroll; height: 20rem;"></div>
+                    <br>
+                    <h2 class="text-center fw-bold" id="carousel-title">SQUADRE</h2>
+                    <div id="carouselExampleControls" class="carousel slide text-center" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carousel">
+                            <div class="carousel-item active">
+                                <img src="../static/styles/images/fantacitorio-gab.jpg" class="d-block" alt="team">
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5 class="team-username">
+                                        <div style="color: white;">SQUADRA DI</div>@GIORGINO26
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div>
+                        <div class="text-center">Visualizza la squadra di un qualsiasi utente twitter digitando il suo
+                            username!</div>
+                        <div class="input-group justify-content-center">
+                            <form method="post" action="/fantacitorio" onsubmit="return validazioneUser()">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button type="submit" class="btn btn-outline-primary"><em
+                                                class="fa-solid fa-magnifying-glass"></em></button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="addon-wrapping" name="query" id="query" required>
+                                </div>
+                            </form>
+                        </div>
+                        {% block userteam %}
+                        {% if b_userteam %}
+                        <div class="col" id="userteam">
+                            {% include "userteam.html" %}
+                        </div>
+                        {% endif %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br>
+        </div>
+
+        <script>
+            var results = {{ results| tojson | safe}}
+            showTeam(results)
+
+            var classifica = {{ classifica| tojson | safe}}
+            showLeaderBoard(classifica)
+
+        </script>
+    </body>
+
+</html>

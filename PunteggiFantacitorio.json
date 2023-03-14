@@ -1,0 +1,593 @@
+{
+    "politico": [
+        {
+            "nome": "Matteo",
+            "cognome": "Salvini",
+            "punteggio": 3008,
+            "incremento_settimana": 2120,
+            "incremento_medio": [
+                300,
+                2023,
+                97
+            ],
+            "incremento_max": 2023,
+            "incremento_min": 97,
+            "posizione_classifica_media": [
+                4
+            ],
+            "posizione_classifica_old": 4,
+            "posizione_classifica_new": 1,
+            "best": [
+                "best singlescore",
+                "best average",
+                "best weekly"
+            ]
+        },
+        {
+            "nome": "Carlo",
+            "cognome": "Calenda",
+            "punteggio": 1836,
+            "incremento_settimana": 200,
+            "incremento_medio": [
+                1000,
+                180,
+                200
+            ],
+            "incremento_max": 1000,
+            "incremento_min": 180,
+            "posizione_classifica_media": [
+                1
+            ],
+            "posizione_classifica_old": 1,
+            "posizione_classifica_new": 2,
+            "best": []
+        },
+        {
+            "nome": "Manlio",
+            "cognome": "Di Stefano",
+            "punteggio": 1240,
+            "incremento_settimana": 600,
+            "incremento_medio": [
+                100,
+                100,
+                220,
+                220,
+                300,
+                300
+            ],
+            "incremento_max": 300,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                11
+            ],
+            "posizione_classifica_old": 11,
+            "posizione_classifica_new": 3,
+            "best": []
+        },
+        {
+            "nome": "Maurizio",
+            "cognome": "Gasparri",
+            "punteggio": 1130,
+            "incremento_settimana": 100,
+            "incremento_medio": [
+                300,
+                100
+            ],
+            "incremento_max": 300,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                3
+            ],
+            "posizione_classifica_old": 3,
+            "posizione_classifica_new": 4,
+            "best": []
+        },
+        {
+            "nome": "Ignazio",
+            "cognome": "La Russa",
+            "punteggio": 1110,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                620,
+                320
+            ],
+            "incremento_max": 620,
+            "incremento_min": 320,
+            "posizione_classifica_media": [
+                2
+            ],
+            "posizione_classifica_old": 2,
+            "posizione_classifica_new": 5,
+            "best": []
+        },
+        {
+            "nome": "Alessandra",
+            "cognome": "Maiorino",
+            "punteggio": 950,
+            "incremento_settimana": 150,
+            "incremento_medio": [
+                800,
+                150
+            ],
+            "incremento_max": 800,
+            "incremento_min": 150,
+            "posizione_classifica_media": [
+                8
+            ],
+            "posizione_classifica_old": 8,
+            "posizione_classifica_new": 6,
+            "best": []
+        },
+        {
+            "nome": "Vincenzo",
+            "cognome": "Spadafora",
+            "punteggio": 800,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                800
+            ],
+            "incremento_max": 800,
+            "incremento_min": 800,
+            "posizione_classifica_media": [
+                5
+            ],
+            "posizione_classifica_old": 5,
+            "posizione_classifica_new": 7,
+            "best": []
+        },
+        {
+            "nome": "Carlo Ugo",
+            "cognome": "De Girolamo",
+            "punteggio": 800,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                800
+            ],
+            "incremento_max": 800,
+            "incremento_min": 800,
+            "posizione_classifica_media": [
+                6
+            ],
+            "posizione_classifica_old": 6,
+            "posizione_classifica_new": 8,
+            "best": []
+        },
+        {
+            "nome": "Gabriella",
+            "cognome": "Di Girolamo",
+            "punteggio": 800,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                800
+            ],
+            "incremento_max": 800,
+            "incremento_min": 800,
+            "posizione_classifica_media": [
+                7
+            ],
+            "posizione_classifica_old": 7,
+            "posizione_classifica_new": 9,
+            "best": []
+        },
+        {
+            "nome": "Simone",
+            "cognome": "Pillon",
+            "punteggio": 793,
+            "incremento_settimana": 13,
+            "incremento_medio": [
+                600,
+                13
+            ],
+            "incremento_max": 600,
+            "incremento_min": 13,
+            "posizione_classifica_media": [
+                9
+            ],
+            "posizione_classifica_old": 9,
+            "posizione_classifica_new": 10,
+            "best": [
+                "worst singlescore"
+            ]
+        },
+        {
+            "nome": "Giorgia",
+            "cognome": "Meloni",
+            "punteggio": 650,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                100,
+                500
+            ],
+            "incremento_max": 500,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                10
+            ],
+            "posizione_classifica_old": 10,
+            "posizione_classifica_new": 11,
+            "best": []
+        },
+        {
+            "nome": "Stefano",
+            "cognome": "Bonaccini",
+            "punteggio": 620,
+            "incremento_settimana": 300,
+            "incremento_medio": [
+                100,
+                220,
+                300
+            ],
+            "incremento_max": 300,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                16
+            ],
+            "posizione_classifica_old": 16,
+            "posizione_classifica_new": 12,
+            "best": []
+        },
+        {
+            "nome": "Dario",
+            "cognome": "Nardella",
+            "punteggio": 550,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                500,
+                50
+            ],
+            "incremento_max": 500,
+            "incremento_min": 50,
+            "posizione_classifica_media": [
+                12
+            ],
+            "posizione_classifica_old": 12,
+            "posizione_classifica_new": 13,
+            "best": []
+        },
+        {
+            "nome": "Licia",
+            "cognome": "Ronzulli",
+            "punteggio": 520,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                50
+            ],
+            "incremento_max": 50,
+            "incremento_min": 50,
+            "posizione_classifica_media": [
+                13
+            ],
+            "posizione_classifica_old": 13,
+            "posizione_classifica_new": 14,
+            "best": []
+        },
+        {
+            "nome": "Barbara",
+            "cognome": "Floridia",
+            "punteggio": 400,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                400
+            ],
+            "incremento_max": 400,
+            "incremento_min": 400,
+            "posizione_classifica_media": [
+                14
+            ],
+            "posizione_classifica_old": 14,
+            "posizione_classifica_new": 15,
+            "best": []
+        },
+        {
+            "nome": "Vittorio",
+            "cognome": "Sgarbi",
+            "punteggio": 380,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                200,
+                100
+            ],
+            "incremento_max": 200,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                15
+            ],
+            "posizione_classifica_old": 15,
+            "posizione_classifica_new": 16,
+            "best": []
+        },
+        {
+            "nome": "Marta Antonia",
+            "cognome": "Fascina",
+            "punteggio": 350,
+            "incremento_settimana": 350,
+            "incremento_medio": [
+                150,
+                200
+            ],
+            "incremento_max": 200,
+            "incremento_min": 150,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 17,
+            "best": [
+                "best climber"
+            ]
+        },
+        {
+            "nome": "Laura",
+            "cognome": "Ravetto",
+            "punteggio": 332,
+            "incremento_settimana": 52,
+            "incremento_medio": [
+                150,
+                52
+            ],
+            "incremento_max": 150,
+            "incremento_min": 52,
+            "posizione_classifica_media": [
+                17
+            ],
+            "posizione_classifica_old": 17,
+            "posizione_classifica_new": 18,
+            "best": []
+        },
+        {
+            "nome": "Andrea",
+            "cognome": "De Maria",
+            "punteggio": 250,
+            "incremento_settimana": 250,
+            "incremento_medio": [
+                250
+            ],
+            "incremento_max": 250,
+            "incremento_min": 250,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 19,
+            "best": []
+        },
+        {
+            "nome": "Felice",
+            "cognome": "Mariani",
+            "punteggio": 250,
+            "incremento_settimana": 250,
+            "incremento_medio": [
+                250
+            ],
+            "incremento_max": 250,
+            "incremento_min": 250,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 20,
+            "best": []
+        },
+        {
+            "nome": "Andrea",
+            "cognome": "Giarrizzo",
+            "punteggio": 200,
+            "incremento_settimana": 200,
+            "incremento_medio": [
+                100,
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 21,
+            "best": []
+        },
+        {
+            "nome": "Federico",
+            "cognome": "Mollicone",
+            "punteggio": 180,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                18
+            ],
+            "posizione_classifica_old": 18,
+            "posizione_classifica_new": 22,
+            "best": []
+        },
+        {
+            "nome": "Silvio",
+            "cognome": "Berlusconi",
+            "punteggio": 142,
+            "incremento_settimana": 142,
+            "incremento_medio": [
+                50,
+                92
+            ],
+            "incremento_max": 92,
+            "incremento_min": 50,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 23,
+            "best": []
+        },
+        {
+            "nome": "Ciro",
+            "cognome": "Maschio",
+            "punteggio": 130,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                40
+            ],
+            "incremento_max": 40,
+            "incremento_min": 40,
+            "posizione_classifica_media": [
+                19
+            ],
+            "posizione_classifica_old": 19,
+            "posizione_classifica_new": 24,
+            "best": []
+        },
+        {
+            "nome": "Massimo",
+            "cognome": "Ruspandini",
+            "punteggio": 100,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                20
+            ],
+            "posizione_classifica_old": 20,
+            "posizione_classifica_new": 25,
+            "best": []
+        },
+        {
+            "nome": "Antonio",
+            "cognome": "Federico",
+            "punteggio": 100,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [
+                21
+            ],
+            "posizione_classifica_old": 21,
+            "posizione_classifica_new": 26,
+            "best": []
+        },
+        {
+            "nome": "Francesco",
+            "cognome": "Lollobrigida",
+            "punteggio": 100,
+            "incremento_settimana": 100,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 27,
+            "best": []
+        },
+        {
+            "nome": "Marco",
+            "cognome": "Rizzone",
+            "punteggio": 100,
+            "incremento_settimana": 100,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 28,
+            "best": []
+        },
+        {
+            "nome": "Luca",
+            "cognome": "Rizzo Nervo",
+            "punteggio": 100,
+            "incremento_settimana": 100,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 29,
+            "best": []
+        },
+        {
+            "nome": "Maria",
+            "cognome": "Rizzotti",
+            "punteggio": 100,
+            "incremento_settimana": 100,
+            "incremento_medio": [
+                100
+            ],
+            "incremento_max": 100,
+            "incremento_min": 100,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 30,
+            "best": []
+        },
+        {
+            "nome": "Tommaso",
+            "cognome": "Foti",
+            "punteggio": 70,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                70
+            ],
+            "incremento_max": 70,
+            "incremento_min": 70,
+            "posizione_classifica_media": [
+                22
+            ],
+            "posizione_classifica_old": 22,
+            "posizione_classifica_new": 31,
+            "best": []
+        },
+        {
+            "nome": "Augusta",
+            "cognome": "Montaruli",
+            "punteggio": 56,
+            "incremento_settimana": 56,
+            "incremento_medio": [
+                56
+            ],
+            "incremento_max": 56,
+            "incremento_min": 56,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 32,
+            "best": []
+        },
+        {
+            "nome": "Vittoria",
+            "cognome": "Baldino",
+            "punteggio": 50,
+            "incremento_settimana": 50,
+            "incremento_medio": [
+                50
+            ],
+            "incremento_max": 50,
+            "incremento_min": 50,
+            "posizione_classifica_media": [],
+            "posizione_classifica_old": 10000,
+            "posizione_classifica_new": 33,
+            "best": []
+        },
+        {
+            "nome": "Angela",
+            "cognome": "Salafia",
+            "punteggio": 40,
+            "incremento_settimana": 0,
+            "incremento_medio": [
+                20,
+                20
+            ],
+            "incremento_max": 20,
+            "incremento_min": 20,
+            "posizione_classifica_media": [
+                23
+            ],
+            "posizione_classifica_old": 23,
+            "posizione_classifica_new": 34,
+            "best": [
+                "best average classifica"
+            ]
+        }
+    ]
+}

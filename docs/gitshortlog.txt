@@ -1,0 +1,5 @@
+    31	Gabriel Preite <gabriel.preite@studio.unibo.it>
+    12	Alessio Brusori <alessio.brusori@studio.unibo.it>
+    12	Simone Tassi <72198236+simonetassi@users.noreply.github.com>
+     4	Simone Giannone <simone.giannone@studio.unibo.it>
+     1	Alessio Brusori <alessio.brusori@power-up-team.com>

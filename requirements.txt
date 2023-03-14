@@ -1,0 +1,10 @@
+Flask
+Flask-APScheduler
+apscheduler
+tweepy
+nltk
+numpy==1.19.3
+pandas
+chess
+pytest
+pytest-cov

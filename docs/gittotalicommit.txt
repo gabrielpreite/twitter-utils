@@ -1,0 +1,11 @@
+    69	Gabriel Preite <gabriel.preite@studio.unibo.it>
+    27	Simone Tassi <72198236+simonetassi@users.noreply.github.com>
+    12	Alessio Brusori <alessio.brusori@studio.unibo.it>
+    11	near237 <s.giannone23@gmail.com>
+     5	Simone Giannone <simone.giannone@studio.unibo.it>
+     3	Matteo.Leccabue <matteo.leccabue@studio.unibo.it>
+     2	Alessio Brusori <alessio.brusori@power-up-team.com>
+     2	Matteo Leccabue <matteo.leccabue@studio.unibo.it>
+     1	Simone Tassi <simone.tassi@studio.unibo.it>
+co-authored commits:137
+Co-author list:
